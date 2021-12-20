@@ -1,0 +1,24 @@
+.page-main {
+  margin: 0;
+  padding: 0;
+  flex: 1 0 auto;
+}
+
+.page-main__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 98px;
+  padding-left: 98px;
+
+  @media (max-width: $tablet-width) {
+    max-width: auto;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: calc(25% - 65px);
+    padding-left: calc(25% - 65px);
+  }
+}

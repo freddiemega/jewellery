@@ -1,0 +1,73 @@
+.slogan {
+  min-height: 463px;
+  background-color: $basic-brown;
+  background-image: url("../img/slogan-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slogan-back-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+    background-image: url("../img/slogan-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slogan-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("../img/slogan-back-mobile@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slogan-back-mobile@2x.jpg");
+    }
+  }
+}
+
+.slogan h2 {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+  margin-top: 180px;
+  margin-bottom: -5px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 38px;
+    line-height: 49px;
+    margin-top: 190px;
+    margin-bottom: -7px;
+  }
+}
+
+.slogan p {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}

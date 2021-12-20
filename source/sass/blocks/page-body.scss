@@ -1,0 +1,10 @@
+.page-body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  color: $special-black-text;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
