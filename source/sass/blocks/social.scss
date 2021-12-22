@@ -46,6 +46,26 @@
 .social__link {
   color: $basic-white;
   text-decoration: none;
+
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+
+  @media (max-width: $mobile-width) {
+    &:hover {
+      outline: 1px solid $basic-white;
+      outline-offset: 3px;
+    }
+
+    &:focus {
+      outline: 1px solid $basic-white;
+      outline-offset: 3px;
+    }
+  }
 }
 
 .social__icon {

@@ -75,7 +75,7 @@
         <section class="slider">
           <h2 class="visually-hidden">New products in our catalog</h2>
           <p class="slider__title">New In</p>
-          <p class="slider__text"><a class="blog__text-link" href="#">Shop Now</a></p>
+          <p class="slider__text"><a class="slider__text-link" href="catalog.html">Shop Now</a></p>
           <button class="slider__button slider__button--prev" type="button">
             <span class="visually-hidden">previous sliders</span>
             <svg width="29" height="9">
@@ -88,11 +88,9 @@
               <use xlink:href="img/sprite_auto.svg#icon-arrow-right"></use>
             </svg>
           </button>
-          <div class="slider__wrapper">
-
-
-              <ul class="slider__list">
-                <li class="slider__item">
+          <div class="swiper slider__wrapper">
+              <ul class="swiper-wrapper slider__list">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -114,7 +112,7 @@
                     <span class="slider__item-price">$ 145</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -136,7 +134,7 @@
                     <span class="slider__item-price">$ 115</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -158,7 +156,7 @@
                     <span class="slider__item-price">$ 215</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -180,7 +178,7 @@
                     <span class="slider__item-price">$ 95</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -202,7 +200,7 @@
                     <span class="slider__item-price">$ 145</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -224,7 +222,7 @@
                     <span class="slider__item-price">$ 115</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -246,7 +244,7 @@
                     <span class="slider__item-price">$ 215</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -268,7 +266,7 @@
                     <span class="slider__item-price">$ 95</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -290,7 +288,7 @@
                     <span class="slider__item-price">$ 145</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -312,7 +310,7 @@
                     <span class="slider__item-price">$ 115</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -334,7 +332,7 @@
                     <span class="slider__item-price">$ 215</span>
                   </a>
                 </li>
-                <li class="slider__item">
+                <li class="swiper-slide slider__item">
                   <div class="slider__inner-img">
                     <picture>
                       <!-- 1х: 130px; 2x: 260px -->
@@ -356,15 +354,10 @@
                     <span class="slider__item-price">$ 95</span>
                   </a>
                 </li>
-
-
-
               </ul>
-
-
           </div>
           <span class="visually-hidden">slider pagination</span>
-
+          <div class="slider__pagination"></div>
         </section>
         <section class="blog">
           <h2 class="blog__title">Blog</h2>
@@ -701,6 +694,45 @@
         </ul>
       </div>
     </footer>
+
+    <section class="modal-overlay visually-hidden">
+      <div class="modal-login">
+        <div class="modal-login__inner">
+          <h2>Log In</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-login__email">
+              <label>
+                <input type="text" required="" name="user-email" placeholder="Your E-mail">
+              </label>
+            </div>
+            <div class="modal-login__pass">
+              <label>
+                <input type="password" required="" name="user-password" placeholder="Password">
+              </label>
+            </div>
+            <div class="modal-login__form-forgot-pass">
+              <a href="#">Forgot your password?</a>
+            </div>
+            <div class="modal-login__form-submit">
+              <button type="submit">Log In</button>
+            </div>
+            <div class="modal-login__form-sign-up">
+              <span>Don’t have an account?</span>
+              <a href="#">Sign up</a>
+            </div>
+          </form>
+          <button class="modal-login__button-close" type="button">
+            <span class="visually-hidden">Close</span>
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>

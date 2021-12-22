@@ -1,0 +1,68 @@
+.slogan-catalog {
+  min-height: 261px;
+  background-color: $basic-brown;
+  background-image: url("../img/slogan-catalog-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slogan-catalog-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 45px;
+    background-image: url("../img/slogan-catalog-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slogan-catalog-tablet@1x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("../img/slogan-catalog-mobile@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slogan-catalog-mobile@1x.jpg");
+    }
+  }
+}
+
+.slogan-catalog h2 {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+  margin-top: 92px;
+  margin-bottom: 1px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 80px;
+  }
+}
+
+.slogan-catalog p {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 29px;
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+}

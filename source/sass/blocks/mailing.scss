@@ -86,6 +86,16 @@
   line-height: 36px;
   color: $basic-white;
 
+  &:hover {
+    outline: 1px solid $basic-white;
+    outline-offset: 3px;
+  }
+
+  &:focus {
+    outline: 1px solid $basic-white;
+    outline-offset: 3px;
+  }
+
   &::placeholder {
     font-family: "Poppins", "Verdana", sans-serif;
     font-weight: 500;
@@ -113,4 +123,14 @@
   line-height: 21px;
   color: $basic-white;
   cursor: pointer;
+
+  &:hover {
+    outline: 1px solid $basic-white;
+    outline-offset: 3px;
+  }
+
+  &:focus {
+    outline: 1px solid $basic-white;
+    outline-offset: 3px;
+  }
 }

@@ -1,0 +1,76 @@
+.range-controls {
+  width: 100%;
+  position: relative;
+}
+
+.range-controls__scale {
+  height: 1px;
+  width: 100%;
+  background-color: $special-grey-block;
+}
+
+.range-controls__bar {
+  height: 1px;
+  background-color: $basic-brown;
+  width: 53%;
+  margin-left: 22%;
+
+  @media (max-width: $tablet-width) {
+    width: 55%;
+    margin-left: 18%;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--min {
+      left: 22%;
+    }
+
+    &--max {
+      left: 75%;
+    }
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  left: 140px;
+  background-color: $basic-brown;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--min {
+    left: 22%;
+  }
+
+  &--max {
+    left: 75%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: -7px;
+    left: 100px;
+
+    &--min {
+      left: 15%;
+    }
+
+    &--max {
+      left: 72%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &--min {
+      left: 17%;
+    }
+
+    &--max {
+      left: 71%;
+    }
+  }
+}

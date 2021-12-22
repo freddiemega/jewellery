@@ -57,6 +57,16 @@
     background-color: $basic-white;
     cursor: pointer;
     border: none;
+
+    &:hover {
+      outline: 1px solid $basic-brown;
+      outline-offset: 3px;
+    }
+
+    &:focus {
+      outline: 1px solid $basic-brown;
+      outline-offset: 3px;
+    }
   }
 }
 
@@ -86,6 +96,17 @@
   margin: 0;
   padding: 0;
   border: none;
+  outline-offset: -1px;
+
+  &:focus {
+    outline: 1px solid $basic-brown;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:focus {
+      outline: 1px solid $basic-white;
+    }
+  }
 
   &::placeholder {
     font-family: "Poppins", "Verdana", sans-serif;
@@ -105,6 +126,11 @@
   position: absolute;
   top: 30px;
   left: calc(50% - 33px);
+
+  &:focus {
+    outline: 1px solid $basic-brown;
+    outline-offset: 3px;
+  }
 
   @media (max-width: $mobile-width) {
     top: 20px;
@@ -143,6 +169,14 @@
   color: $special-black-text;
   text-decoration: none;
 
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -153,8 +187,26 @@
   color: $special-black-text;
   text-decoration: none;
 
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+
   @media (max-width: $tablet-width) {
     margin-left: 0;
+
+    &:hover {
+      outline: 1px solid $basic-brown;
+      outline-offset: 3px;
+    }
+
+    &:focus {
+      outline: 1px solid $basic-brown;
+      outline-offset: 3px;
+    }
   }
 }
 
@@ -235,10 +287,26 @@
   text-decoration: none;
   color: $special-black-text;
 
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 36px;
     color: $basic-white;
+
+    &:hover {
+      color: $basic-black;
+    }
+
+    &:focus {
+      color: $basic-black;
+    }
   }
 }
 
@@ -271,6 +339,14 @@
   white-space: nowrap;
   text-decoration: none;
   color: rgba($basic-white, 0.75);
+
+  &:hover {
+    color: $basic-black;
+  }
+
+  &:focus {
+    color: $basic-black;
+  }
 }
 
 .page-header__login-link {
@@ -284,6 +360,14 @@
   white-space: nowrap;
   text-decoration: none;
   color: $basic-white;
+
+  &:hover {
+    color: $basic-black;
+  }
+
+  &:focus {
+    color: $basic-black;
+  }
 }
 
 .page-header__wrapper--closed .page-header__search {

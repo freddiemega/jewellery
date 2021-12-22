@@ -61,6 +61,16 @@
   cursor: pointer;
   position: absolute;
 
+  &:hover {
+    outline: 1px solid $basic-brown;
+    outline-offset: 3px;
+  }
+
+  &:focus {
+    outline: 1px solid $basic-brown;
+    outline-offset: 3px;
+  }
+
   &--prev {
     top: 150px;
     left: 0;
@@ -99,6 +109,14 @@
   color: $special-black-text;
   text-decoration: none;
   border-bottom: 1px solid $basic-brown;
+
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
 }
 
 .slider__wrapper {
@@ -107,8 +125,12 @@
   margin-bottom: 51px;
   position: relative;
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (max-width: $mobile-width) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 }
 
@@ -120,7 +142,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  width: 309%;
+  width: 9999px;
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -128,17 +150,18 @@
   }
 }
 
-.slider__item {
-  margin-right: 30px;
-}
-
-.slider__item-link {
-  text-decoration: none;
-}
-
 .slider__inner-img {
   width: 100%;
   height: auto;
+  padding-bottom: 5px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .slider__inner-img img {
@@ -146,14 +169,19 @@
   display: block;
 
   @media (max-width: $tablet-width) {
-    width: 324px;
+    width: 50vw;
     height: auto;
   }
 
   @media (max-width: $mobile-width) {
-    width: 130px;
+    //width: 130px;
+    width: 50vw;
     height: auto;
   }
+}
+
+.slider__item-link {
+  text-decoration: none;
 }
 
 .slider__item-name {
@@ -166,8 +194,12 @@
   margin-top: 13px;
   margin-bottom: 7px;
 
-  @media (max-width: $mobile-width) {
-    max-width: 130px;
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
   }
 }
 
@@ -197,11 +229,20 @@
 
   @media (max-width: $mobile-width) {
     display: block;
-    text-align: center;
     color: $special-black-text;
-    width: 53px;
+    width: 50px;
     text-align: justify;
-	  text-align-last: justify;
+    text-align-last: justify;
+  }
+}
+
+.slider__pagination span {
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
   }
 }
 

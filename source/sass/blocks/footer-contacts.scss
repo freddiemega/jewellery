@@ -38,4 +38,12 @@
 .footer-contacts__link {
   text-decoration: none;
   color: $basic-white;
+
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
 }

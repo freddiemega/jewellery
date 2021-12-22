@@ -73,6 +73,14 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+
   @media (max-width: $mobile-width) {
     font-size: 16px;
     line-height: 140%;
@@ -90,10 +98,15 @@
   align-items: center;
   width: 100%;
   cursor: pointer;
+
+  &:focus {
+    outline: 1px solid $basic-brown;
+    outline-offset: 3px;
+  }
 }
 
 .faq__icon-closed {
-  fill:none;
+  fill: none;
   display: none;
 
   &--show {
@@ -119,7 +132,7 @@
 }
 
 .faq__icon-opened {
-  fill:none;
+  fill: none;
   display: none;
 
   &--show {
