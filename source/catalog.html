@@ -20,7 +20,7 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
-        <a class="page-header__logo" href="index.html">
+        <a class="page-header__logo" href="main.html">
           <img class="page-header__logo-img" src="img/logo.svg" width="66" height="66" alt="Логотип Jewellery">
           <img class="page-header__logo-open" src="img/logo-white.svg" width="66" height="66" alt="Логотип Jewellery">
         </a>
@@ -82,7 +82,7 @@
                   <ul class="filter__list">
                     <li class="filter__item">
                       <button class="filter__button">
-                        <span class="filter__group-name">Product</span>
+                        <div class="filter__group-name"><span>Product</span></div>
                         <svg class="filter__icon-closed filter__icon-closed--show filter__icon-closed--nojs" width="15" height="8">
                           <use xlink:href="img/sprite_auto.svg#icon-closed"></use>
                         </svg>
@@ -111,7 +111,7 @@
                     </li>
                     <li class="filter__item">
                       <button class="filter__button">
-                        <span class="filter__group-name">Material</span>
+                        <div class="filter__group-name"><span>Material</span></div>
                         <svg class="filter__icon-closed filter__icon-closed--show filter__icon-closed--nojs" width="15" height="8">
                           <use xlink:href="img/sprite_auto.svg#icon-closed"></use>
                         </svg>
@@ -132,7 +132,7 @@
                     </li>
                     <li class="filter__item">
                       <button class="filter__button">
-                        <span class="filter__group-name">Collection</span>
+                        <div class="filter__group-name"><span>Collection</span></div>
                         <svg class="filter__icon-closed filter__icon-closed--show filter__icon-closed--nojs" width="15" height="8">
                           <use xlink:href="img/sprite_auto.svg#icon-closed"></use>
                         </svg>
@@ -153,7 +153,7 @@
                     </li>
                     <li class="filter__item">
                       <button class="filter__button">
-                        <span class="filter__group-name">Price</span>
+                        <div class="filter__group-name"><span>Price</span></div>
                         <svg class="filter__icon-closed filter__icon-closed--show filter__icon-closed--nojs" width="15" height="8">
                           <use xlink:href="img/sprite_auto.svg#icon-closed"></use>
                         </svg>
@@ -213,8 +213,10 @@
                     <img src="img/cat-1-desktop@1x.jpg" srcset="img/cat-1-desktop@2x.jpg 2x" alt="Double pearl earrings" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Double pearl earrings</a></p>
-                <span class="catalog-space__price">$ 115</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Double pearl earrings</a>
+                  <span>$ 115</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -233,8 +235,10 @@
                     <img src="img/cat-2-desktop@1x.jpg" srcset="img/cat-2-desktop@2x.jpg 2x" alt="Choker with gold bead" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Choker with gold bead</a></p>
-                <span class="catalog-space__price">$ 55</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Choker with gold bead</a>
+                  <span>$ 55</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -253,8 +257,10 @@
                     <img src="img/cat-3-desktop@1x.jpg" srcset="img/cat-3-desktop@2x.jpg 2x" alt="Gold layered necklace" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Gold layered necklace</a></p>
-                <span class="catalog-space__price">$ 155</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Gold layered necklace</a>
+                  <span>$ 155</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -273,8 +279,10 @@
                     <img src="img/cat-4-desktop@1x.jpg" srcset="img/cat-4-desktop@2x.jpg 2x" alt="Blue gemstone pendant" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Blue gemstone pendant</a></p>
-                <span class="catalog-space__price">$ 105</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Blue gemstone pendant</a>
+                  <span>$ 105</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -293,8 +301,10 @@
                     <img src="img/cat-5-desktop@1x.jpg" srcset="img/cat-5-desktop@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Boho earrings</a></p>
-                <span class="catalog-space__price">$ 75</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Boho earrings</a>
+                  <span>$ 75</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -313,8 +323,10 @@
                     <img src="img/cat-6-desktop@1x.jpg" srcset="img/cat-6-desktop@2x.jpg 2x" alt="Gold bird necklace" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Gold bird necklace</a></p>
-                <span class="catalog-space__price">$ 135</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Gold bird necklace</a>
+                  <span>$ 135</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -333,8 +345,10 @@
                     <img src="img/cat-7-desktop@1x.jpg" srcset="img/cat-7-desktop@2x.jpg 2x" alt="Black leather choker" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Black leather choker</a></p>
-                <span class="catalog-space__price">$ 85</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Black leather choker</a>
+                  <span>$ 85</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -353,8 +367,10 @@
                     <img src="img/cat-8-desktop@1x.jpg" srcset="img/cat-8-desktop@2x.jpg 2x" alt=">Necklace with amethyst" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Necklace with amethyst</a></p>
-                <span class="catalog-space__price">$ 145</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Necklace with amethyst</a>
+                  <span>$ 145</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -373,8 +389,10 @@
                     <img src="img/cat-9-desktop@1x.jpg" srcset="img/cat-9-desktop@2x.jpg 2x" alt="Elephant earrings" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Elephant earrings</a></p>
-                <span class="catalog-space__price">$ 95</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Elephant earrings</a>
+                  <span>$ 95</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -393,8 +411,10 @@
                     <img src="img/cat-10-desktop@1x.jpg" srcset="img/cat-10-desktop@2x.jpg 2x" alt="Threader necklace" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Threader necklace</a></p>
-                <span class="catalog-space__price">$ 115</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Threader necklace</a>
+                  <span>$ 115</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -413,8 +433,10 @@
                     <img src="img/cat-11-desktop@1x.jpg" srcset="img/cat-11-desktop@2x.jpg 2x" alt="Origami crane necklace" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Origami crane necklace</a></p>
-                <span class="catalog-space__price">$ 105</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Origami crane necklace</a>
+                  <span>$ 105</span>
+                </div>
               </li>
               <li class="catalog-space__item">
                 <div class="catalog-space__inner-img">
@@ -433,11 +455,11 @@
                     <img src="img/cat-12-desktop@1x.jpg" srcset="img/cat-12-desktop@2x.jpg 2x" alt="Marble earrings" width="270" height="272">
                   </picture>
                 </div>
-                <p class="catalog-space__text"><a class="catalog-space__link" href="#">Marble earrings</a></p>
-                <span class="catalog-space__price">$ 95</span>
+                <div class="catalog-space__item-text">
+                  <a href="#">Marble earrings</a>
+                  <span>$ 95</span>
+                </div>
               </li>
-
-
 
             </ul>
           </div>
@@ -575,6 +597,7 @@
       </div>
     </section>
 
+    <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

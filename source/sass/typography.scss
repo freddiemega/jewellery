@@ -1,0 +1,40 @@
+.block-heading-secondary {
+  margin: 0 auto;
+}
+
+.block-heading-secondary h2 {
+  margin: 0 auto;
+  padding: 0;
+  width: fit-content;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+  color: $special-black-text;
+  margin-bottom: 22px;
+}
+
+.block-heading-secondary a {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: fit-content;
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: $special-black-text;
+  text-decoration: none;
+  border-bottom: 1px solid $basic-brown;
+  padding-bottom: 2px;
+
+  &:hover {
+    color: $basic-brown;
+  }
+
+  &:focus {
+    color: $basic-brown;
+  }
+}

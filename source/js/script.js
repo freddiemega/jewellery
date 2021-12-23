@@ -88,73 +88,91 @@ if (blockFilter) {
 // модальное окно
 
 var modalOverlay = document.querySelector('.modal-overlay');
-var modalCall = modalOverlay.querySelector('.modal-login');
-var buttonToOpenModal = document.querySelector('.page-header__login');
-var buttonToOpenModalTabletMobile = document.querySelector('.page-header__login-link');
-var buttonToCloseModal = document.querySelector('.modal-login__button-close');
+if (modalOverlay) {
+  var modalCall = modalOverlay.querySelector('.modal-login');
+  var buttonToOpenModal = document.querySelector('.page-header__login');
+  var buttonToOpenModalTabletMobile = document.querySelector('.page-header__login-link');
+  var buttonToCloseModal = document.querySelector('.modal-login__button-close');
 
-var userEmailField = modalCall.querySelector('[name="user-email"]');
+  var userEmailField = modalCall.querySelector('[name="user-email"]');
 
-buttonToOpenModal.addEventListener('click', function (e) {
-  e.preventDefault();
-  modalOverlay.classList.remove('visually-hidden');
-  modalOverlay.classList.add('modal-overlay--open');
-  modalCall.classList.add('modal-login--open');
-  userEmailField.focus();
-  document.body.style.overflow = 'hidden';
+  buttonToOpenModal.addEventListener('click', function (e) {
+    e.preventDefault();
+    modalOverlay.classList.remove('visually-hidden');
+    modalOverlay.classList.add('modal-overlay--open');
+    modalCall.classList.add('modal-login--open');
+    userEmailField.focus();
+    document.body.style.overflow = 'hidden';
 
-  if (modalCall.classList.contains('modal-login--open')) {
-    window.addEventListener('click', function (el) {
-      if (el.target === modalOverlay) {
+    if (modalCall.classList.contains('modal-login--open')) {
+      window.addEventListener('click', function (el) {
+        if (el.target === modalOverlay) {
+          document.body.style.overflow = 'visible';
+          modalOverlay.classList.remove('modal-overlay--open');
+          modalCall.classList.remove('modal-login--open');
+        }
+      });
+      window.addEventListener('keydown', function (evt) {
+        if (evt.keyCode === 27) {
+          document.body.style.overflow = 'visible';
+          modalOverlay.classList.remove('modal-overlay--open');
+          modalCall.classList.remove('modal-login--open');
+        }
+      });
+      buttonToCloseModal.addEventListener('click', function () {
         document.body.style.overflow = 'visible';
         modalOverlay.classList.remove('modal-overlay--open');
         modalCall.classList.remove('modal-login--open');
-      }
-    });
-    window.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 27) {
+      });
+    }
+
+  });
+}
+
+if (buttonToOpenModalTabletMobile) {
+  buttonToOpenModalTabletMobile.addEventListener('click', function (e) {
+    e.preventDefault();
+    modalOverlay.classList.remove('visually-hidden');
+    modalOverlay.classList.add('modal-overlay--open');
+    modalCall.classList.add('modal-login--open');
+    userEmailField.focus();
+    document.body.style.overflow = 'hidden';
+
+    if (modalCall.classList.contains('modal-login--open')) {
+      window.addEventListener('click', function (el) {
+        if (el.target === modalOverlay) {
+          document.body.style.overflow = 'visible';
+          modalOverlay.classList.remove('modal-overlay--open');
+          modalCall.classList.remove('modal-login--open');
+        }
+      });
+      window.addEventListener('keydown', function (evt) {
+        if (evt.keyCode === 27) {
+          document.body.style.overflow = 'visible';
+          modalOverlay.classList.remove('modal-overlay--open');
+          modalCall.classList.remove('modal-login--open');
+        }
+      });
+      buttonToCloseModal.addEventListener('click', function () {
         document.body.style.overflow = 'visible';
         modalOverlay.classList.remove('modal-overlay--open');
         modalCall.classList.remove('modal-login--open');
-      }
-    });
-    buttonToCloseModal.addEventListener('click', function () {
-      document.body.style.overflow = 'visible';
-      modalOverlay.classList.remove('modal-overlay--open');
-      modalCall.classList.remove('modal-login--open');
-    });
+      });
+    }
+
+  });
+}
+
+// запись полей формы в Local Storage
+var blockModalForm = document.querySelector('.modal-login__inner');
+var formInModal = blockModalForm.querySelector('[method="post"]');
+var userEmail = formInModal.querySelector('[name="user-email"]');
+var userPassword = formInModal.querySelector('[name="user-password"]');
+
+formInModal.addEventListener('submit', function (evt) {
+  if (!userEmail.value || !userPassword.value) {
+    evt.preventDefault();
+  } else {
+    localStorage.setItem('userEmail', userEmail.value);
   }
-
-});
-
-buttonToOpenModalTabletMobile.addEventListener('click', function (e) {
-  e.preventDefault();
-  modalOverlay.classList.remove('visually-hidden');
-  modalOverlay.classList.add('modal-overlay--open');
-  modalCall.classList.add('modal-login--open');
-  userEmailField.focus();
-  document.body.style.overflow = 'hidden';
-
-  if (modalCall.classList.contains('modal-login--open')) {
-    window.addEventListener('click', function (el) {
-      if (el.target === modalOverlay) {
-        document.body.style.overflow = 'visible';
-        modalOverlay.classList.remove('modal-overlay--open');
-        modalCall.classList.remove('modal-login--open');
-      }
-    });
-    window.addEventListener('keydown', function (evt) {
-      if (evt.keyCode === 27) {
-        document.body.style.overflow = 'visible';
-        modalOverlay.classList.remove('modal-overlay--open');
-        modalCall.classList.remove('modal-login--open');
-      }
-    });
-    buttonToCloseModal.addEventListener('click', function () {
-      document.body.style.overflow = 'visible';
-      modalOverlay.classList.remove('modal-overlay--open');
-      modalCall.classList.remove('modal-login--open');
-    });
-  }
-
 });

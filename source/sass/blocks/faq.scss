@@ -13,23 +13,7 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 60px;
-  }
-}
-
-.faq__title {
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 44px;
-  letter-spacing: 0.03em;
-  color: $special-black-text;
-  text-align: center;
-  margin-bottom: 48px;
-
-  @media (max-width: $mobile-width) {
-    margin-bottom: 31px;
+    text-align: center;
   }
 }
 
@@ -38,6 +22,11 @@
   padding: 0;
   list-style: none;
   border: 1px solid $basic-brown;
+  margin-top: 50px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+  }
 }
 
 .faq__item {
@@ -98,11 +87,6 @@
   align-items: center;
   width: 100%;
   cursor: pointer;
-
-  &:focus {
-    outline: 1px solid $basic-brown;
-    outline-offset: 3px;
-  }
 }
 
 .faq__icon-closed {
@@ -168,6 +152,7 @@
   margin-left: 12px;
   margin-bottom: 6px;
   display: none;
+  text-align: left;
 
   &--show {
     display: block;
