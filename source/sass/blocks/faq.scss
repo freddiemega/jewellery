@@ -34,22 +34,10 @@
 }
 
 .faq__item {
-  //padding-top: 32px;
-  //padding-right: 45px;
-  //padding-bottom: 32px;
-  //padding-left: 38px;
   border-bottom: 1px solid $basic-brown;
 
   &:last-child {
     border-bottom: none;
-  }
-
-  @media (max-width: $tablet-width) {
-    //padding-left: 44px;
-  }
-
-  @media (max-width: $mobile-width) {
-
   }
 }
 
@@ -190,7 +178,6 @@
   @media (max-width: $mobile-width) {
     font-size: 14px;
     line-height: 140%;
-    margin-top: 0;
     max-width: 91%;
     margin-left: 25px;
     margin-bottom: 21px;
