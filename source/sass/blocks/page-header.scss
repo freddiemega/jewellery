@@ -240,7 +240,6 @@
 .page-header__nav-wrapper {
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 21px;
   padding-left: 7px;
 
   @media (max-width: $tablet-width) {
@@ -270,8 +269,11 @@
 .page-header__nav-item {
   margin-right: 17px;
   margin-left: 18px;
+  margin-top: 21px;
+  margin-bottom: 15px;
 
   @media (max-width: $tablet-width) {
+    margin-top: 0;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 21px;

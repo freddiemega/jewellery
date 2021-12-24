@@ -2,7 +2,8 @@
   top: 100px;
   left: 50%;
   width: 430px;
-  min-height: 586px;
+  max-height: 586px;
+  height: calc(100vh - 100px);
   margin-left: -215px;
   padding-top: 188px;
   padding-right: 45px;
@@ -14,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: top;
   box-shadow: 0 5px 32px $special-grey-shadow-modal;
+  background-size: 430px 138px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/login-desktop@2x.jpg");
@@ -26,6 +28,7 @@
     top: 80px;
     padding-left: 51px;
     padding-right: 51px;
+    background-size: 442px 138px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/login-tablet@2x.jpg");
@@ -40,8 +43,9 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 120px;
-    min-height: 470px;
+    max-height: 470px;
     padding-bottom: 40px;
+    background-size: 270px 84px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/login-mobile@2x.jpg");
@@ -51,6 +55,9 @@
 
 .modal-login__inner {
   position: relative;
+  height: 102%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .modal-login__inner h2 {
@@ -86,15 +93,17 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 22px;
+  border-radius: 0;
+  outline: none;
 
   &:hover {
-    outline: 1px solid $basic-brown;
-    outline-offset: 3px;
+    background-color: $basic-white;
+    opacity: 0.7;
   }
 
   &:focus {
-    outline: 1px solid $basic-brown;
-    outline-offset: 3px;
+    background-color: $basic-white;
+    opacity: 0.7;
   }
 
   &::placeholder {
@@ -121,15 +130,17 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 0;
+  border-radius: 0;
+  outline: none;
 
   &:hover {
-    outline: 1px solid $basic-brown;
-    outline-offset: 3px;
+    background-color: $basic-white;
+    opacity: 0.7;
   }
 
   &:focus {
-    outline: 1px solid $basic-brown;
-    outline-offset: 3px;
+    background-color: $basic-white;
+    opacity: 0.7;
   }
 
   &::placeholder {
