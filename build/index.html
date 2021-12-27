@@ -81,9 +81,9 @@
           <div class="mailing__wrapper">
             <p class="mailing__title">The good stuff in your inbox</p>
             <p class="mailing__text">News and updates from CH. No spam, we promise.</p>
-            <form>
+            <form action="https://echo.htmlacademy.ru" method="post">
               <label>
-                <input type="email" name="signup-email" placeholder="Your E-mail">
+                <input type="email" required="" name="signup-email" placeholder="Your E-mail">
               </label>
               <button type="submit">
                 <span>Sign Up</span>
@@ -162,7 +162,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="modal-login__email">
               <label>
-                <input type="text" required="" name="user-email" placeholder="Your E-mail">
+                <input type="email" required="" name="user-email" placeholder="Your E-mail">
               </label>
             </div>
             <div class="modal-login__pass">
@@ -181,13 +181,13 @@
               <a href="#">Sign up</a>
             </div>
           </form>
-          <button class="modal-login__button-close" type="button">
-            <span class="visually-hidden">Close</span>
-            <svg width="14" height="14">
-              <use xlink:href="img/sprite_auto.svg#icon-modal-close"></use>
-            </svg>
-          </button>
         </div>
+        <button class="modal-login__button-close" type="button">
+          <span class="visually-hidden">Close</span>
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-modal-close"></use>
+          </svg>
+        </button>
       </div>
     </section>
 

@@ -231,8 +231,8 @@
   position: absolute;
   border: none;
   background-color: transparent;
-  top: -170px;
-  right: -30px;
+  top: 18px;
+  right: 18px;
   cursor: pointer;
 
   &:hover {
@@ -245,14 +245,9 @@
     outline-offset: 3px;
   }
 
-  @media (max-width: $tablet-width) {
-    top: -168px;
-    right: -34px;
-  }
-
   @media (max-width: $mobile-width) {
-    top: -108px;
-    right: -5px;
+    top: 13px;
+    right: 13px;
   }
 }
 
